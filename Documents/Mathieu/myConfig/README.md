@@ -106,10 +106,11 @@ docker
 lazygit 
 neofetch / godisk
 
+
+
 # NPM global packages :
 https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 Solidity nomic foundation:
-
 https://github.com/NomicFoundation/hardhat-vscode/blob/development/server/README.md
 
 
