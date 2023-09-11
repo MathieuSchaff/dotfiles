@@ -1,0 +1,42 @@
+after the display launch-config.sh script is run, the following is the output of xrandr
+TESTS I3
+test 1:
+au démarrage: 
+
+HDMI-0 connected 2880x1620+0+0 (normal left inverted right x axis y axis) 527mm x 296mm
+eDP-1-1 connected primary 2560x1600+2880+0 (normal left inverted right x axis y axis) 344mm x 215mm
+ hdmi et eDP sont tout est trop petit
+ le scaling est de 1.5x1.5
+
+ TEST 2 sur i3:
+ after: xrandr --output HDMI-0 --mode 1920x1080 --scale 1.5x1.5 --pos 0x0 --output eDP-1-1 --primary --mode 2560x1600 --scale 1x1 --pos 2880x0
+ le global scale est de 1.5x1.5
+ 0: +*eDP-1-1 2560/344x1600/215+2880+0  eDP-1-1
+ 1: +HDMI-0 2880/527x1620/296+0+0  HDMI-0
+
+Sur ecran main : 2560x1600
+toutes les app sont trop petits (firefox, thunderbird, discord , slack, telegram)
+Sur ecran 2 : 2880x1620
+toutes les app sont trop petits aussi (firefox, thunderbird, discord , slack, telegram)
+
+TEST 3 sur i3 avec un retour aux settings de base:
+ce test est effectué après avoir lancé le premier script
+global scale est de 1.5x1.5
+
+ 0: +*HDMI-0 1920/527x1080/296+0+520  HDMI-0
+ 1: +eDP-1-1 2560/344x1600/215+1920+0  eDP-1-1
+
+sur ecran main : 2560x1600 
+toutes les app sont trop petits (firefox, thunderbird, discord , slack, telegram)
+
+sur ecran 2 : 1920x1080
+les apps sont a la bonne taille. FIrefox etc.
+
+
+X11: 
+
+ after: xrandr --output HDMI-0 --mode 1920x1080 --scale 1.5x1.5 --pos 0x0 --output eDP-1-1 --primary --mode 2560x1600 --scale 1x1 --pos 2880x0
+
+ font dpi : 144 is perfect
+
+
