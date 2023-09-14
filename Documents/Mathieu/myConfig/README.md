@@ -114,4 +114,21 @@ Solidity nomic foundation:
 https://github.com/NomicFoundation/hardhat-vscode/blob/development/server/README.md
 
 
+# setting up react native 
+(react native setup)[https://reactnative.dev/docs/environment-setup?guide=native&platform=android&os=linux]
+(watchman)[https://reactnative.dev/docs/environment-setup?guide=native&platform=android&os=linux]
 
+## install jdk 11
+(JDK 11)[https://www.oracle.com/fr/java/technologies/javase/jdk11-archive-downloads.html]
+download deb package 
+sudo dpkg -i nom_du_package
+ensuite: 
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-11/bin/java 1
+
+## android studio:
+
+(android studio site)[https://developer.android.com/studio/install]
+
+install required libraries and follow the docs inside. 
+
+Careful to use the right sdk: check react native docs

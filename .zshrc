@@ -105,3 +105,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # Ceci charge nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # Ceci charge la complétion de commande nvm (facultatif)
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias pgadmin4='/usr/pgadmin4/bin/pgadmin4'
+# Add PostgreSQL binaries to PATH
+# alias psql='/usr/bin/psql'
