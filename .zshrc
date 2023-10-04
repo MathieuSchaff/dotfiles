@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:~/go/bin
 export PATH="$HOME/Mathieu/Apps/neovim/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # Ceci charge nvm
@@ -108,3 +109,8 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias pgadmin4='/usr/pgadmin4/bin/pgadmin4'
 # Add PostgreSQL binaries to PATH
 # alias psql='/usr/bin/psql'
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+# alias studio='/home/mathieu/Android/Sdk/tools/bin/studio.sh'
+alias studio='/usr/local/android-studio/bin/studio.sh'
