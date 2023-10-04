@@ -132,3 +132,21 @@ sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-11/bin/ja
 install required libraries and follow the docs inside. 
 
 Careful to use the right sdk: check react native docs
+
+# Git bare repository
+(Article)[https://www.atlassian.com/git/tutorials/dotfiles]
+git init --bare $HOME/dotfiles
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' (add this alias to .bashrc)
+bash
+config config --local status.showUntrackedFiles no
+
+Basic usage example:
+
+config add /path/to/file
+config commit -m "A short message"
+config push
+
+WHAT'S THE REASON FOR THE GIT BARE REPO?
+
+By using the git bare repo, you can have nested git repos in your home directory and there will not be any issue with keeping things straight.   That is the reason for the git bare repo and having an alias ("config").
+
