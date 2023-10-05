@@ -91,12 +91,17 @@ A clipboard tool is necessary for the integration with the system clipboard (see
 Terminal with true color support (for the default theme, otherwise it is dependent on the theme you are using)
 Optional Requirements:
 
-   [ripgrep](https://github.com/BurntSushi/ripgrep) - live grep telescope search (<leader>fw)
-   lazygit - git ui toggle terminal (<leader>tl or <leader>gg)
-    [go DiskUsage](https://github.com/dundee/gdu) - disk usage toggle terminal (<leader>tu)
-   [bottom](https://github.com/ClementTsang/bottom) - process viewer toggle terminal (<leader>tt)
-    Python - python repl toggle terminal
-    Node - Node is needed for a lot of the LSPs, and for the node repl toggle terminal (<leader>tn)
+- [ripgrep](https://github.com/BurntSushi/ripgrep) - live grep telescope search (<leader>fw)
+
+- lazygit - git ui toggle terminal (<leader>tl or <leader>gg)
+
+- [go DiskUsage](https://github.com/dundee/gdu) - disk usage toggle terminal (<leader>tu)
+
+- [bottom](https://github.com/ClementTsang/bottom) - process viewer toggle terminal (<leader>tt)
+
+- Python - python repl toggle terminal
+
+- Node - Node is needed for a lot of the LSPs, and for the node repl toggle terminal (<leader>tn)
 
 # Package to install to work well:
 
