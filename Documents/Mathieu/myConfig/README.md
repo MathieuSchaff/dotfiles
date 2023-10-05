@@ -91,10 +91,10 @@ A clipboard tool is necessary for the integration with the system clipboard (see
 Terminal with true color support (for the default theme, otherwise it is dependent on the theme you are using)
 Optional Requirements:
 
-    (ripgrep)[https://github.com/BurntSushi/ripgrep] - live grep telescope search (<leader>fw)
-    lazygit - git ui toggle terminal (<leader>tl or <leader>gg)
-    (go DiskUsage)[https://github.com/dundee/gdu] - disk usage toggle terminal (<leader>tu)
-   (bottom)[https://github.com/ClementTsang/bottom] - process viewer toggle terminal (<leader>tt)
+   [ripgrep](https://github.com/BurntSushi/ripgrep) - live grep telescope search (<leader>fw)
+   lazygit - git ui toggle terminal (<leader>tl or <leader>gg)
+    [go DiskUsage](https://github.com/dundee/gdu) - disk usage toggle terminal (<leader>tu)
+   [bottom](https://github.com/ClementTsang/bottom) - process viewer toggle terminal (<leader>tt)
     Python - python repl toggle terminal
     Node - Node is needed for a lot of the LSPs, and for the node repl toggle terminal (<leader>tn)
 
@@ -115,11 +115,11 @@ https://github.com/NomicFoundation/hardhat-vscode/blob/development/server/README
 
 
 # setting up react native 
-(react native setup)[https://reactnative.dev/docs/environment-setup?guide=native&platform=android&os=linux]
-(watchman)[https://reactnative.dev/docs/environment-setup?guide=native&platform=android&os=linux]
+[react native setup](https://reactnative.dev/docs/environment-setup?guide=native&platform=android&os=linux)
+[watchman](https://reactnative.dev/docs/environment-setup?guide=native&platform=android&os=linux)
 
 ## install jdk 11
-(JDK 11)[https://www.oracle.com/fr/java/technologies/javase/jdk11-archive-downloads.html]
+[JDK 11](https://www.oracle.com/fr/java/technologies/javase/jdk11-archive-downloads.html)
 download deb package 
 sudo dpkg -i nom_du_package
 ensuite: 
@@ -127,14 +127,14 @@ sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-11/bin/ja
 
 ## android studio:
 
-(android studio site)[https://developer.android.com/studio/install]
+[android studio site](https://developer.android.com/studio/install)
 
 install required libraries and follow the docs inside. 
 
 Careful to use the right sdk: check react native docs
 
 # Git bare repository
-(Article)[https://www.atlassian.com/git/tutorials/dotfiles]
+[Article](https://www.atlassian.com/git/tutorials/dotfiles)
 git init --bare $HOME/dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME' (add this alias to .bashrc)
 bash
