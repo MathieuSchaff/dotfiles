@@ -155,3 +155,7 @@ WHAT'S THE REASON FOR THE GIT BARE REPO?
 
 By using the git bare repo, you can have nested git repos in your home directory and there will not be any issue with keeping things straight.   That is the reason for the git bare repo and having an alias ("config").
 
+## Xresources for i3 
+
+in ~/.Xresources
+Xft.dpi: 160
