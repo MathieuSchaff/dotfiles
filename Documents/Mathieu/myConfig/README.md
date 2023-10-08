@@ -1,7 +1,31 @@
 # My Linux Configuration
 
 This readme contains instructions on setting up my preferred Linux configuration, including the tools and packages I use.
+## current npm g global
 
+── @nestjs/cli@10.1.18
+├── @nomicfoundation/solidity-language-server@0.7.3
+├── @sanity/cli@3.16.7
+├── @tailwindcss/language-server@0.0.13
+├── corepack@0.16.0
+├── expo-cli@6.3.10
+├── neovim@4.10.1
+├── npm@9.5.0
+├── solhint@3.6.1
+├── solidity-ls@0.5.3
+├── tree-sitter-cli@0.20.8
+├── typescript@5.1.3
+└── yarn@1.22.19
+
+## ZSH
+
+## NVM 
+
+- [nvm](https://github.com/nvm-sh/nvm)
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+```
 ## Neovim
 
 Neovim is a highly configurable text editor that I use for programming and editing text files. I prefer installing it from source, following the steps outlined on these GitHub repositories:
@@ -35,13 +59,18 @@ ripgrep fd-find silversearcher-ag mlocate zoxide python3-pip libsqlite3-dev bat
 ### Clone Neovim repository
 
 ```sh
-git clone -b release-0.8 https://github.com/neovim/neovim ~/Documents/Mathieu/Apps/Neovim
+mkdir ~/neovim
+
+git clone https://github.com/neovim/neovim ~/neovim
+```
+```sh
+git checkout stable
 ```
 
-make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/Documents/Mathieu/Apps/neovim"
-
 ```sh
-make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/Mathieu/Apps/neovim"
+make CMAKE_BUILD_TYPE=RelWithDebInfo 
+CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
+sudo make install
 ```
 
 When you provide a custom installation prefix using the CMAKE_INSTALL_PREFIX variable, Neovim will be installed in the specified directory instead of the default system location, which is /usr/local for Unix-like systems.
@@ -51,7 +80,7 @@ For example, when you use this command above Neovim will be installed in $HOME/D
 This can help you keep your system organized and simplify the uninstallation process. However, you will need to add the custom installation location to your PATH environment variable to use Neovim from the command line:
 
 ```sh
-export PATH="$HOME//Mathieu/Apps/neovim/bin:$PATH"
+export PATH="$HOME/neovim/bin:$PATH"
 
 ```
 
