@@ -10,8 +10,8 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod1
-set $fm eDP-1-1
-set $sec HDMI-0
+# set $fm eDP-1-1
+# set $sec HDMI-0
 # Le Xft.dpi: 160 taille des polices sera plus grandes
 exec --no-startup-id xrdb -merge ~/.Xresources
 # Font for window titles. Will also be used by the bar unless a different font
@@ -115,10 +115,10 @@ bindsym $mod+q focus parent
 
 set $fm eDP-1-1
 set $sec HDMI-0
-workspace 1 output $sec
-workspace 6 output $sec
-workspace 7 output $sec
-workspace 8 output $sec
+# workspace 1 output $sec
+# workspace 6 output $sec
+# workspace 7 output $sec
+# workspace 8 output $sec
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
