@@ -19,6 +19,34 @@ This readme contains instructions on setting up my preferred Linux configuration
 
 ## ZSH
 
+```sh
+sudo apt install zsh
+```
+
+## Dependencies:
+
+```sh
+sudo apt update && \
+sudo apt upgrade -y && \
+sudo apt install -y zsh-syntax-highlighting curl compton \
+tree ripgrep fd-find unzip bat python3-dev \
+neofetch  mlocate zoxide python3-pip libsqlite3-dev \
+libssl-dev wget && \
+sudo apt autoremove -y && \
+sudo apt autoclean -y
+```
+
+- [ripgrep](https://github.com/sharkdp/fd)
+better grep
+- [zsh syntax highliting](https://github.com/sharkdp/fd)
+not configured for the moment. Todo.
+
+
+- [fd-find](https://github.com/sharkdp/fd)
+another way to find command 
+- [zoxide](https://github.com/ajeetdsouza/zoxide#installation)
+good tool to navigate + can be used with zsh
+
 ## NVM 
 
 - [nvm](https://github.com/nvm-sh/nvm)
@@ -26,6 +54,10 @@ This readme contains instructions on setting up my preferred Linux configuration
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 ```
+
+## Golang 
+- [golang](https://go.dev/doc/install)
+
 ## Neovim
 
 Neovim is a highly configurable text editor that I use for programming and editing text files. I prefer installing it from source, following the steps outlined on these GitHub repositories:
@@ -47,7 +79,7 @@ Neovim is a highly configurable text editor that I use for programming and editi
 sudo apt-get install ninja-build gettext cmake unzip curl
 ```
 
-Or
+and
 
 ```sh
 cd ~ && \
@@ -84,6 +116,12 @@ export PATH="$HOME/neovim/bin:$PATH"
 
 ```
 
+install node js packages :
+```sh
+npm i -g tree-sitter-cli && \
+npm i -g neovim
+```
+
 ---
 
 #### NEOVIM - config
@@ -99,6 +137,11 @@ pip3 install pynvim
 ```
 
 #### HACK FONT - install
+Check if hacker fonts is not already installed:
+
+```sh
+fc-list | grep -i "Hack"
+```
 
 Go to https://www.nerdfonts.com/font-downloads to check if link is the lastest release version !
 https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack
@@ -140,7 +183,12 @@ docker
 lazygit 
 neofetch / godisk
 
+## FZF
 
+```sh
+git clone https://github.com/junegunn/fzf ~/.fzf && \
+cd ~/.fzf && ./install
+```
 
 # NPM global packages :
 https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
