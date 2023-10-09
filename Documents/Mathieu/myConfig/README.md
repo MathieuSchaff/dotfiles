@@ -23,6 +23,7 @@ This readme contains instructions on setting up my preferred Linux configuration
 sudo apt install zsh
 ```
 
+
 ## Dependencies:
 
 ```sh
@@ -121,6 +122,12 @@ install node js packages :
 npm i -g tree-sitter-cli && \
 npm i -g neovim
 ```
+### Clipboard for neovim
+
+https://neovim.io/doc/user/provider.html#clipboard-tool
+
+sudo apt-get install xclip
+
 
 ---
 
@@ -147,11 +154,11 @@ Go to https://www.nerdfonts.com/font-downloads to check if link is the lastest r
 https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack
 
 ```sh
-wget -P ~/Mathieu/Downloads https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip && \
+wget -P ~/Downloads https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Hack.zip && \
 cd ~/.local/share && \
 mkdir fonts && \
 cd fonts && \
-mv ~/Mathieu/Downloads/Hack.zip . && \
+mv ~/Downloads/Hack.zip . && \
 unzip Hack.zip && \
 rm -rf Hack.zip
 ```
