@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin
 # export PATH=$PATH:~/go/bin
-export PATH="$HOME/Mathieu/Apps/neovim/bin:$PATH"
+export PATH="$HOME/neovim/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # Ceci charge nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # Ceci charge la complétion de commande nvm (facultatif)
@@ -114,3 +114,7 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 # alias studio='/home/mathieu/Android/Sdk/tools/bin/studio.sh'
 alias studio='/usr/local/android-studio/bin/studio.sh'
+. "$HOME/.cargo/env"
+eval "$(zoxide init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
