@@ -144,6 +144,10 @@ pip3 install pynvim
 ```
 
 #### HACK FONT - install
+ 
+ La doc de nvim tree [nvim tree doc](https://github.com/nvim-tree/nvim-tree.lua) 
+ demande d'installer la patchet font. 
+
 Check if hacker fonts is not already installed:
 
 ```sh
@@ -181,6 +185,15 @@ Optional Requirements:
 - Python - python repl toggle terminal
 
 - Node - Node is needed for a lot of the LSPs, and for the node repl toggle terminal (<leader>tn)
+
+### Astrovim
+
+- [astrovim user config](https://github.com/MathieuSchaff/astro-config-test)
+
+```sh
+git clone git@github.com:MathieuSchaff/astro-config-test.git ~/.config/nvim/lua/user
+```
+
 
 # Package to install to work well:
 
