@@ -31,7 +31,8 @@
 
 11. [i3](#i3)
 
-12. [rofi](#rofi)
+12. [rofi](#Rofi)
+
 
 
 ## current npm g global
@@ -64,7 +65,7 @@ sudo apt update && \
 sudo apt upgrade -y && \
 sudo apt install -y zsh-syntax-highlighting curl compton \
 tree ripgrep fd-find unzip bat python3-dev \
-neofetch  mlocate zoxide python3-pip libsqlite3-dev \
+neofetch  mlocate zoxide python3-pip libsqlite3-dev bison\
 libssl-dev wget && \
 sudo apt autoremove -y && \
 sudo apt autoclean -y
@@ -248,8 +249,42 @@ https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.m
 Solidity nomic foundation:
 https://github.com/NomicFoundation/hardhat-vscode/blob/development/server/README.md
 
+## Xresources for i3 
 
-# setting up react native 
+in ~/.Xresources
+Xft.dpi: 160
+## i3
+
+```sh
+curl https://baltocdn.com/i3-window-manager/signing.asc | sudo apt-key add -
+$ sudo apt install apt-transport-https --yes
+$ echo "deb https://baltocdn.com/i3-window-manager/i3/i3-autobuild-ubuntu/ all main" | sudo tee /etc/apt/sources.list.d/i3-autobuild.list
+$ sudo apt update
+$ sudo apt install i3
+```
+
+## tmux
+```sh
+
+```
+
+## Rofi
+
+Install: [install rofi](https://github.com/davatorium/rofi#installation)
+
+```sh
+sudo apt install rofi
+```
+
+check dependencies if not working
+
+```sh
+command -v gcc clang make autoconf automake pkg-config flex bison checkmk glib-compile-resources
+```
+
+
+## setting up react native 
+
 [react native setup](https://reactnative.dev/docs/environment-setup?guide=native&platform=android&os=linux)
 [watchman](https://reactnative.dev/docs/environment-setup?guide=native&platform=android&os=linux)
 
@@ -285,7 +320,4 @@ WHAT'S THE REASON FOR THE GIT BARE REPO?
 
 By using the git bare repo, you can have nested git repos in your home directory and there will not be any issue with keeping things straight.   That is the reason for the git bare repo and having an alias ("config").
 
-## Xresources for i3 
 
-in ~/.Xresources
-Xft.dpi: 160

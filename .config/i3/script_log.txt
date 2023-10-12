@@ -1,4 +1,0 @@
-In choose_i3_config: enter single monitor
-In choose_i3_config: enter single monitor
-In choose_i3_config: enter single monitor
-In choose_i3_config: enter dual monitor
