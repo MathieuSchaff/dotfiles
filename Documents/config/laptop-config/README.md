@@ -265,8 +265,13 @@ $ sudo apt install i3
 
 ## tmux
 ```sh
-
+sudo apt-get install tmux
 ```
+
+The config :
+
+- [theme config catppuccin](https://github.com/catppuccin/tmux#set-the-status-module-left-separator)
+
 
 ## Rofi
 

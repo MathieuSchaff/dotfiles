@@ -119,3 +119,7 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 eval "$(zoxide init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export LC_ALL=en_US.UTF-8
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
