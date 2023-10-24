@@ -123,3 +123,18 @@ export LC_ALL=en_US.UTF-8
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+# bun completions
+[ -s "/home/mathieur/.bun/_bun" ] && source "/home/mathieur/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/mathieur/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
