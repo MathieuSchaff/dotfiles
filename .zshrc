@@ -99,6 +99,26 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias c='clear'
+# git aliases
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gpl='git pull'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gbr='git branch'
+# ls aliases
+alias l='ls -l'
+alias lh='ls -lah'
+# tmux aliases
+alias t='tmux'
+# fdfind alias
+alias fd="fdfind"
+alias zdf='selected_dir=$(fd -t d | fzf) && [ -n "$selected_dir" ] && z "$selected_dir" || sleep 0.1'
+#
 export TERM="xterm-256color"
 export PATH=$PATH:/usr/local/go/bin
 # export PATH=$PATH:~/go/bin

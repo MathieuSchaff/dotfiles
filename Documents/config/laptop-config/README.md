@@ -239,12 +239,15 @@ neofetch
 
 ## FZF
 
+
 ```sh
 git clone https://github.com/junegunn/fzf ~/.fzf && \
 cd ~/.fzf && ./install
 ```
 
+
 ## NPM global packages :
+
 https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 Solidity nomic foundation:
 https://github.com/NomicFoundation/hardhat-vscode/blob/development/server/README.md
